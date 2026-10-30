@@ -9,31 +9,35 @@ import brot from "../../assets/images__1_-removebg-preview.png";
 import kase from "../../assets/cheese-emoji-icon-png-701751694961142xgoxd67vrv-removebg-preview.png";
 import joghurt from "../../assets/joghurt.png";
 import schokolade from "../../assets/chocolate-bar-art-free-vector-removebg-preview.png";
+import { ColorArticles } from "../../shared/ColorArticles/ColorArticles";
+
 
 const sentences = [
+ 
+ 
   {
     id: 1,
-    title: "das Eis",
-    sentence: "Ich mag Eis.",
-    image: eis,
-  },
-  {
-    id: 2,
-    title: "die Pizza",
-    sentence: "Ich mag Pizza.",
-    image: pizza,
-  },
-  {
-    id: 3,
     title: "der Salat",
     sentence: "Ich mag Salat.",
     image: salat,
   },
   {
-    id: 4,
+    id: 2,
     title: "der Kuchen",
     sentence: "Ich mag Kuchen.",
     image: kuchen,
+  },
+  {
+    id: 3,
+    title: "der Käse",
+    sentence: "Ich mag Käse.",
+    image: kase,
+  },
+  {
+    id: 4,
+    title: "der Joghurt",
+    sentence: "Ich mag Joghurt.",
+    image: joghurt,
   },
   {
     id: 5,
@@ -41,23 +45,24 @@ const sentences = [
     sentence: "Ich mag Brot.",
     image: brot,
   },
-  {
+   {
     id: 6,
-    title: "der Käse",
-    sentence: "Ich mag Käse.",
-    image: kase,
+    title: "das Eis",
+    sentence: "Ich mag Eis.",
+    image: eis,
   },
+  
   {
     id: 7,
-    title: "der Joghurt",
-    sentence: "Ich mag Joghurt.",
-    image: joghurt,
-  },
-  {
-    id: 8,
     title: "die Schokolade",
     sentence: "Ich mag Schokolade.",
     image: schokolade,
+  },
+   {
+    id: 8,
+    title: "die Pizza",
+    sentence: "Ich mag Pizza.",
+    image: pizza,
   },
 ];
 
@@ -162,6 +167,7 @@ export default function Essen() {
                     Deutsch für Kinder
                   </p>
 
+<ColorArticles> 
                   <h2 className="mt-2 break-words text-lg font-bold text-stone-900 sm:text-xl">
                     {item.title}
                   </h2>
@@ -171,7 +177,7 @@ export default function Essen() {
                       {item.sentence}
                     </p>
                   </div>
-
+</ColorArticles>
                   {/* Speech Button */}
                   <button
                     type="button"
