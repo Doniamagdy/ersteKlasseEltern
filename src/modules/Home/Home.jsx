@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import {  ArrowUpRight, IceCreamCone } from "lucide-react";
+import {  ArrowUpRight, IceCreamCone , Palette } from "lucide-react";
 import "./Home.css";
 
 const lessons = [
@@ -9,6 +9,13 @@ const lessons = [
     description: "Lerne neue Wörter in dieser Deutschlektion.",
     icon: IceCreamCone,
     number: "01",
+  },
+   {
+    slug: "farben",
+    title: "Die Farben",
+    description: "Lerne neue Wörter in dieser Deutschlektion.",
+    icon: Palette,
+    number: "02",
   },
  
 ];
