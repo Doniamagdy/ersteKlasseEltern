@@ -10,7 +10,6 @@ import lila from "../../assets/lila.png";
 import platte from "../../assets/color-palette.png";
 import { ColorArticles } from "../../shared/ColorArticles/ColorArticles";
 
-
 const sentences = [
   {
     id: 1,
@@ -18,24 +17,29 @@ const sentences = [
     sentence: "Der Apfel ist rot.",
     image: apfel,
   },
+
   {
     id: 2,
-    title: "die Sonne",
-    sentence: "Die Sonne ist gelb.",
-    image: sonne,
+    title: "der Baum",
+    sentence: "Der Baum ist grün.",
+    image: baum,
   },
+
   {
     id: 3,
     title: "das Meer",
     sentence: "Das Meer ist blau.",
     image: meer,
   },
+
   {
     id: 4,
-    title: "der Baum",
-    sentence: "Der Baum ist grün.",
-    image: baum,
+    title: "die Sonne",
+    sentence: "Die Sonne ist gelb.",
+    image: sonne,
   },
+
+  
   {
     id: 5,
     title: "die Milch",
@@ -134,8 +138,6 @@ export default function Farben() {
             const isSpeaking = speakingId === item.id;
 
             return (
-                    
-
               <article
                 key={item.id}
                 className="group flex min-w-0 overflow-hidden rounded-2xl border border-stone-100 bg-white shadow-md shadow-stone-900/5 transition duration-300 hover:-translate-y-1 hover:shadow-xl"
@@ -158,18 +160,17 @@ export default function Farben() {
                   <p className="text-xs font-semibold uppercase tracking-wider text-orange-500 sm:text-sm">
                     Deutsch für Kinder
                   </p>
-<ColorArticles> 
-                  <h2 className="mt-2 break-words text-lg font-bold text-stone-900 sm:text-xl">
-                    {item.title}
-                  </h2>
+                  <ColorArticles>
+                    <h2 className="mt-2 break-words text-lg font-bold text-stone-900 sm:text-xl">
+                      {item.title}
+                    </h2>
 
-
-                  <div className="mt-4">
-                    <p className="break-words text-sm font-semibold leading-6 text-stone-800">
-                      {item.sentence}
-                    </p>
-                  </div>
-</ColorArticles>
+                    <div className="mt-4">
+                      <p className="break-words text-sm font-semibold leading-6 text-stone-800">
+                        {item.sentence}
+                      </p>
+                    </div>
+                  </ColorArticles>
                   {/* Speech Button */}
                   <button
                     type="button"
@@ -221,6 +222,5 @@ export default function Farben() {
         </div>
       </div>
     </main>
-   
   );
 }
