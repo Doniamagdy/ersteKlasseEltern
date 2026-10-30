@@ -8,6 +8,8 @@ import milch from "../../assets/milch.png";
 import karotte from "../../assets/Karotte.png";
 import lila from "../../assets/lila.png";
 import platte from "../../assets/color-palette.png";
+import regenbogen from "../../assets/regenbogen.png";
+
 import { ColorArticles } from "../../shared/ColorArticles/ColorArticles";
 
 const sentences = [
@@ -25,15 +27,22 @@ const sentences = [
     image: baum,
   },
 
-  {
+   {
     id: 3,
+    title: "der Regenbogen",
+    sentence: "Der Regenbogen ist bunt.",
+    image: regenbogen,
+  },
+
+  {
+    id: 4,
     title: "das Meer",
     sentence: "Das Meer ist blau.",
     image: meer,
   },
 
   {
-    id: 4,
+    id: 5,
     title: "die Sonne",
     sentence: "Die Sonne ist gelb.",
     image: sonne,
@@ -41,19 +50,19 @@ const sentences = [
 
   
   {
-    id: 5,
+    id: 6,
     title: "die Milch",
     sentence: "Die Milch ist weiß.",
     image: milch,
   },
   {
-    id: 6,
+    id: 7,
     title: "die Blume",
     sentence: "Die Blume ist lila.",
     image: lila,
   },
   {
-    id: 7,
+    id: 8,
     title: "die Karotte",
     sentence: "Die Karotte ist orange.",
     image: karotte,
