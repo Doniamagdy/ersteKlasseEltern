@@ -29,14 +29,7 @@ function Navbar() {
           <img src={Flag} alt="Flag" />
         </div>
 
-        {/* Mobile Menu Button */}
-        <button
-          type="button"
-          aria-label="Menü öffnen"
-          className="flex h-11 w-11 items-center justify-center rounded-full bg-[#F9C74F] text-xl shadow-md transition hover:scale-105 md:hidden"
-        >
-          ☰
-        </button>
+      
       </div>
     </nav>
   );
